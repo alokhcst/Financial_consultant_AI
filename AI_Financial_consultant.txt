@@ -1,0 +1,269 @@
+AI Financial consultant 
+
+Functional Requirements:
+
+Project Feature Requirements: AI Financial Consultant Platform
+1. Intelligent Portfolio Construction
+
+The platform must enable financial advisors to construct portfolios for clients in a smarter, easier way, reducing complexity and manual effort. 
+It should integrate with conversational AI and “super agent” scenarios to streamline the advisor’s workflow. 
+
+2. Investment Solution Discovery
+
+Advisors need tools to find investment solutions using both structured data (performance, risk factors) and unstructured data (research materials, asset manager reports). 
+The platform should aggregate and present this information efficiently, supporting advanced search and filtering capabilities. 
+
+3. Portfolio Construction Workflow
+
+The system must support the full workflow: asset allocation, tax impact analysis, transition planning, and risk analytics. 
+It should provide tools for stress testing portfolios and evaluating value-add for clients. 
+
+4. Flexible Client Reporting
+
+Advisors require flexibility in reporting: some clients want detailed reports, others prefer executive summaries or one-pagers. 
+The platform should allow customization of report formats and levels of detail. 
+
+5. Super Agent Orchestration
+
+The platform should orchestrate multiple agent capabilities: investment solution search, proposal generation, transition analysis, and sequencing of tasks. 
+It must support account inception and consolidation workflows, automating the process from advice to account creation. 
+
+
+Key Takeaways for Feature Development
+
+Automation & AI Integration: The project must leverage AI to automate complex tasks and provide intelligent recommendations.
+Data Aggregation: Both structured and unstructured data sources must be integrated for comprehensive investment analysis.
+Workflow Support: End-to-end support for portfolio construction, including analytics and reporting, is essential.
+Customization: Advisors need the ability to tailor outputs to client preferences.
+Agent-Based Design: Modular “super agents” should handle distinct tasks and collaborate seamlessly.
+
+
+
+Agents Requirements:
+
+ define the agent personas, their roles, and the data requirements for Financial Advisors.
+Agent Personas and Roles
+1. Portfolio Architect Agent
+Primary Role: Intelligent portfolio construction and optimization
+
+Analyzes client risk profiles and investment objectives
+Recommends optimal asset allocation strategies
+Performs portfolio rebalancing calculations
+Validates compliance with investment mandates and regulatory requirements
+Generates multiple portfolio scenarios for comparison
+
+2. Investment Research Agent
+Primary Role: Investment solution discovery and analysis
+
+Searches structured data (performance metrics, risk factors, expense ratios)
+Analyzes unstructured data (research reports, fund manager commentary, market insights)
+Provides comparative analysis of investment vehicles
+Tracks and evaluates emerging investment opportunities
+Delivers contextual recommendations based on client needs
+
+3. Risk Analytics Agent
+Primary Role: Portfolio risk assessment and stress testing
+
+Performs scenario analysis and stress testing
+Calculates risk metrics (VaR, Sharpe ratio, beta, standard deviation)
+Identifies concentration risks and correlation exposures
+Models downside protection scenarios
+Provides early warning alerts for portfolio drift
+
+4. Tax Optimization Agent
+Primary Role: Tax-efficient investment strategies
+
+Analyzes tax impact of portfolio transitions
+Identifies tax-loss harvesting opportunities
+Optimizes asset location across account types
+Calculates capital gains/losses for rebalancing decisions
+Ensures compliance with wash-sale rules
+
+5. Transition Planning Agent
+Primary Role: Portfolio transition execution strategy
+
+Creates step-by-step transition roadmaps
+Sequences trades to minimize market impact and tax consequences
+Identifies transition risks and mitigation strategies
+Estimates transition costs (taxes, trading costs, opportunity costs)
+Coordinates timing across multiple accounts
+
+6. Reporting & Communication Agent
+Primary Role: Client-facing documentation and reports
+
+Generates customized reports (detailed, executive summary, one-pagers)
+Creates visual presentations of portfolio performance
+Produces regulatory and compliance documentation
+Adapts communication style to client sophistication level
+Generates meeting preparation materials
+
+7. Account Operations Agent
+Primary Role: Account inception and administrative workflows
+
+Automates account opening processes
+Handles account consolidation workflows
+Manages beneficiary designations and titling
+Processes account transfers and rollovers
+Ensures documentation completeness
+
+8. Orchestrator Agent (Super Agent)
+Primary Role: Coordination and workflow management
+
+Routes requests to appropriate specialist agents
+Sequences multi-step workflows intelligently
+Maintains context across agent interactions
+Resolves conflicts between agent recommendations
+Provides unified interface for advisor interactions
+Tracks task completion and dependencies
+
+
+Data Requirements:
+
+
+Data Requirements for Financial Advisors
+Client Data
+Client Profile Information
+
+Demographics (age, marital status, dependents, location)
+Employment status and income sources
+Net worth statement (assets and liabilities)
+Tax bracket and tax filing status
+Estate planning details (wills, trusts, beneficiaries)
+
+Financial Goals & Objectives
+
+Investment goals (retirement, education, wealth transfer, etc.)
+Time horizons for each goal
+Required return targets
+Liquidity needs and emergency fund status
+Major upcoming expenses or cash flow events
+
+Risk Profile
+
+Risk tolerance questionnaire results
+Risk capacity assessment
+Previous investment experience
+Behavioral biases and preferences
+Loss aversion tendencies
+
+Current Holdings
+
+Existing portfolio positions (securities, funds, alternatives)
+Account types (taxable, IRA, 401k, trust accounts)
+Cost basis information for taxable holdings
+Restricted or concentrated positions
+External accounts and holdings
+
+
+Investment Universe Data
+Structured Data
+
+Security Master Data: Tickers, CUSIPs, ISINs, security classifications
+Pricing Data: Current prices, historical prices, NAVs
+Performance Metrics: Returns (1M, 3M, YTD, 1Y, 3Y, 5Y, 10Y, inception)
+Risk Metrics: Standard deviation, beta, alpha, Sharpe ratio, maximum drawdown
+Fundamental Data: Expense ratios, turnover, AUM, fund flows
+Holdings Data: Top holdings, sector allocations, geographic exposure
+Fixed Income Specifics: Duration, yield, credit quality, maturity
+Tax Characteristics: Dividend yield, capital gains distributions, tax efficiency
+
+Unstructured Data
+
+Fund manager commentary and letters
+Research analyst reports and ratings
+Market research and white papers
+Economic outlooks and forecasts
+Alternative investment due diligence materials
+ESG/impact investing research
+Regulatory filings (prospectuses, 10-Ks, 13-Fs)
+
+
+Market & Economic Data
+
+Real-time and historical market indices
+Interest rate curves (Treasury yields, LIBOR/SOFR)
+Inflation expectations and data
+Currency exchange rates
+Commodity prices
+Volatility indices (VIX, etc.)
+Economic indicators (GDP, unemployment, PMI, etc.)
+Central bank policy statements and calendars
+
+
+Regulatory & Compliance Data
+
+Investment policy statements (IPS) for each client
+Regulatory restrictions (accredited investor status, qualified purchaser)
+Firm compliance rules and restricted lists
+Suitability documentation
+Regulatory reporting requirements (Form ADV, etc.)
+Client agreement terms and restrictions
+
+
+Tax Data
+
+Historical tax returns (2-3 years)
+Capital gains/loss carryforwards
+Tax-deferred account contribution limits and status
+State and local tax rates
+Alternative Minimum Tax (AMT) exposure
+Qualified dividend and interest income history
+Cost basis tracking methodology (FIFO, specific lot, etc.)
+
+
+Operational Data
+
+Account opening forms and templates
+Custodian integration data feeds
+Trading platforms and execution systems
+Rebalancing schedules and triggers
+Fee schedules and billing information
+Document management system access
+Communication logs and meeting notes
+
+
+Analytics & Modeling Data
+
+Monte Carlo simulation parameters
+Historical correlation matrices
+Expected return assumptions (capital market assumptions)
+Factor models and exposures
+Stress test scenarios (2008 crisis, COVID-19, inflation shock, etc.)
+Liquidity risk models
+Benchmark indices for performance comparison
+
+
+Advisor Preferences & Firm Data
+
+Advisor's approved investment universe
+Model portfolios and strategic allocations
+Firm's investment philosophy and methodology
+Standard operating procedures and workflows
+Client segmentation strategies
+Reporting templates and branding guidelines
+Compensation and fee structures
+
+
+Data Integration Priorities
+High Priority (Essential for Core Functionality):
+
+Client profiles and holdings
+Security master and pricing data
+Performance and risk metrics
+Tax basis information
+
+Medium Priority (Enhanced Functionality):
+
+Unstructured research materials
+Advanced risk analytics
+Market and economic data
+Compliance documentation
+
+Lower Priority (Nice-to-Have):
+
+ESG/impact data
+Alternative investment research
+Advanced behavioral finance insights
+Predictive analytics
+
+

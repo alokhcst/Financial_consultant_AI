@@ -1,0 +1,35 @@
+# Core LangGraph and LangChain dependencies
+langgraph>=0.2.0
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-openai>=0.1.0
+langchain-community>=0.0.20
+
+# Web interface
+gradio>=4.0.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Type hints
+typing-extensions>=4.8.0
+
+# Pydantic for data validation
+pydantic>=2.0.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Snowflake connector (for MCP integration)
+snowflake-connector-python>=3.0.0
+
+# Date/time handling
+python-dateutil>=2.8.0
+
+# HTTP requests for market data APIs
+httpx>=0.24.0
+requests>=2.31.0
+
+# JSON handling
+orjson>=3.9.0
